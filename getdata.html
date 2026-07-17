@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function getdata() {
+            let nm = localStorage.getItem("name");
+            console.log("Normal data 1 " );
+            try {
+                console.log("Welcome to the data:= " + nm);
+                
+            } catch (error) {
+                console.log("Error: " + error.message);
+                console.log(error.message);
+            }
+            console.log("Normal data 2 " );
+            console.log("Normal data 100 " );
+            document.getElementById("a").innerHTML = nm;
+        }
+        // getdata();
+    </script>
+</head>
+<body onload="getdata()">
+    <h1 id="a">Name Here...!!!</h1>
+</body>
+</html>
